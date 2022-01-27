@@ -1,7 +1,8 @@
 import React from 'react';
+import { AboutMeContainer } from './aboutmeElements';
 
 export const AboutMe = () => {
-  return <div id = 'AboutMe'>
+  return <AboutMeContainer id = 'AboutMe'>
        AboutMe
-        </div>;
+        </AboutMeContainer>;
 };

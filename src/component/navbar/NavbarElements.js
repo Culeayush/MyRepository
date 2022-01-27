@@ -8,8 +8,6 @@ export const NavbarContainer = styled.div`
     position: fixed;
     display:flex;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
     justify-content: center;
 `
 
@@ -17,7 +15,8 @@ export const MyLogo = styled.span`
     color: #fff;
     font-family: 'Roboto Mono', monospace;
     display: inline-block;
-    
+    padding-left: 20px;
+
     @media screen and (max-width: 768px){
         display: none;
     }
@@ -27,7 +26,7 @@ export const SLogo = styled.span`
     color: #fff;
     font-family: 'Roboto Mono', monospace;
     display: none;
-
+    padding-left: 20px;
     @media screen and (max-width: 768px){
         display: inline-block;
     }
@@ -35,11 +34,21 @@ export const SLogo = styled.span`
 export const NavlinkContainer = styled.div`
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
 `
 
 export const Navlinks = styled(Link)`
     color: white;
     padding-right: 20px;
     cursor: pointer;
+`
+
+export const Homelink = styled(Link)`
+    cursor: pointer;
+`
+
+export const NavbarCC = styled.div`
+    width: 100%;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
 `
