@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 export const NavbarContainer = styled.div`
     width: 100%;
     height: 80px;
-    background: #000;
+    background: rgba(0,0,0,0.5);
     position: fixed;
     display:flex;
     align-items: center;
