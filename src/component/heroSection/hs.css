@@ -1,4 +1,4 @@
-div.class1 {
+/* div.class1 {
     background-color: rgb(16, 202, 140);
     height: 500px;
     display: flex;
@@ -41,14 +41,29 @@ li:hover {
             width: 90%;
             margin: 3%;
         }
+} */
+
+/* .svgCont {
+    width: 650px;
+    height: 100px;
 }
 
+.svgText{
+    font-size: 60;
+} */
 
-@media only screen and (max-width:580px){
-    .class1{
-        background-color: blueviolet;
+
+/* @media only screen and (max-width:680px){
+    .svgCont{
+        width: 500px;
+        height: 158px;
+        font-size: 45;
     }
-}
+
+    .svgText {
+        font-size: 30;
+    }
+} */
 
 
 text {

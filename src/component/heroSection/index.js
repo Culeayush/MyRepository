@@ -13,11 +13,15 @@ export const HeroSection = () => {
                     "As long back as I can remember, I've always wanted to create this portfolio"
                 </Dialogue>
                 
-                <svg width="420" height="150">
+                {/* FIXME : Fix Responsiveness of Name Tag */}
+                <svg className="svgCont" width="490"
+                 height="154">
                     <text className="anim" x="10" y="80"
                     fill="none" stroke="#fff" 
-                    stroke-width="2" font-size="60">
-                    AYUSH SINGH
+                    stroke-width="2" font-size="35">
+                    Hey ,this is 
+                    <tspan className="svgText" fontSize="55" > Ayush Singh
+                    </tspan>
                     </text>
                 </svg>
 

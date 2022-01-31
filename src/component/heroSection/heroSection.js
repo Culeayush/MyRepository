@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import HEROBG from "../../asset/HEROBG.jpeg"
+import HEROBG from "../../asset/bladerunner.png"
 
 const anim = keyframes`
     0% { 
@@ -9,7 +9,7 @@ const anim = keyframes`
     100% { 
             background-color: rgba(0,0,0,0.4) ;
         }
- `
+`
 
 const slideInFromBottom = keyframes`
     0% {
@@ -21,12 +21,25 @@ const slideInFromBottom = keyframes`
 `
 
 const FadeIn = keyframes`
-    from {
+    0% {
         opacity: 0;
+        transform: translateY(-30px);
     }
 
-    to {
+
+    100% {
         opacity: 1;
+        transform: translateY(0);
+    }
+`
+
+const ScaleUp = keyframes`
+    0%{
+        transform: scale(1.3);
+        
+    }
+    100%{
+        transform: scale(1);
     }
 `
 
@@ -51,24 +64,26 @@ export const HomeContainer = styled.div`
     } */
 
 `
+
 export const ImageContainer = styled.div`
     width: 100%;
     height: 600px;
     position: absolute;
     top: 0;
     z-index: -1;
-    /* animation: ${slideInFromBottom} 3s ease; */
     background-image: url(${HEROBG});
     background-position: center;
     background-size: cover;
+    animation: ${ScaleUp} 3s ease;
     
 `
+
 export const Dialogue = styled.h3`
     text-align: center;
     width: 100%;
     max-width: 600px;
     color: #fff;
-    
+    animation: ${FadeIn} 4s ease;
 `
 
 export const Name = styled.h1`
@@ -83,6 +98,6 @@ export const Name = styled.h1`
 
 export const Subtitle = styled.h3`
     font-size: 1.5rem;
-    animation: ${FadeIn} 1s ease 1s;
+    animation: ${FadeIn} 4s ease;
     color: white;
 `
