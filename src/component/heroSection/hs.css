@@ -75,9 +75,9 @@ text {
 
 }
 
-.anim:hover {
+/* .anim:hover {
     animation: hoverDraw 2s ease;
-}
+} */
 
 @keyframes hoverDraw {
   0%   { stroke-dashoffset: -10%; fill: rgba(0,0,0,0); }

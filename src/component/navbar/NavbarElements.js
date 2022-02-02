@@ -9,6 +9,7 @@ export const NavbarContainer = styled.div`
     display:flex;
     align-items: center;
     justify-content: center;
+    z-index: 50;
 `
 
 export const MyLogo = styled.span`
@@ -34,6 +35,9 @@ export const SLogo = styled.span`
 export const NavlinkContainer = styled.div`
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 `
 
 export const Navlinks = styled(Link)`

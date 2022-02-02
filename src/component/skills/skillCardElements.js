@@ -10,6 +10,7 @@ export const CardContainer = styled.section`
     margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 16px;
+    padding-right: 16px;
     overflow: hidden;
     transition: box-shadow .2s ease-in-out;
     cursor: pointer;
@@ -18,8 +19,13 @@ export const CardContainer = styled.section`
     }
 `
 
-export const Image = styled.img`
+export const Image = styled.div`
     transition: 1s ease-in-out;
+    background-position: center;
+    background-size: 40%;
+    background-position: 30% 25%;
+    background-repeat: no-repeat;
+    
     &:hover{
         transform: scale(1.05);
     }
@@ -38,4 +44,3 @@ export const Title = styled.p`
 export const Proficiency = styled.span`
     color: black;
 `
-

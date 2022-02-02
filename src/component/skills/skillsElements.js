@@ -19,9 +19,8 @@ export const SkillHeading = styled.h3`
 
 export const CardsContainer = styled.div`
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    padding-left: 30px;
-    padding-right: 10px;
     padding-bottom: 30px;
     flex-direction: row;
     flex-flow: wrap;
