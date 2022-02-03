@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { RiMenu3Line } from "react-icons/ri"
 
 export const NavbarContainer = styled.div`
     width: 100%;
@@ -55,4 +56,17 @@ export const NavbarCC = styled.div`
     max-width: 1150px;
     display: flex;
     justify-content: space-between;
+`
+
+export const SidebarIcon = styled(RiMenu3Line)`
+    color: #fff;
+    margin-right: 24px;
+    display: none;
+
+    @media screen and (max-width: 768px){
+        display: ${({isOpen}) => (false ? 'none' : 'flex')};
+        position: absolute;
+        right: 0;
+    }
+
 `

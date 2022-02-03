@@ -3,9 +3,9 @@ import { NavbarContainer
     , MyLogo, SLogo 
     , NavlinkContainer 
     ,Navlinks , NavbarCC
-    , Homelink } from './NavbarElements'
+    , Homelink , SidebarIcon} from './NavbarElements'
 
-export const Navbar = () => {
+export const Navbar = ({isOpen, toggle}) => {
     return (
         <NavbarContainer>
             <NavbarCC>
@@ -50,16 +50,10 @@ export const Navbar = () => {
                         offset={-80}
                         duration={500}>HOBBIES</Navlinks>
                 </NavlinkContainer>
+
+                <SidebarIcon onClick={isOpen, toggle}/>
+                
             </NavbarCC>
         </NavbarContainer>
     )
 }
-
-
-/*
-----------------------------------------------
-
-<>   AboutMe Academics Projects 
-
-----------------------------------------------
-*/
